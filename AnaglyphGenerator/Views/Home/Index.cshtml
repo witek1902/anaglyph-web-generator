@@ -1,0 +1,65 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="container" id="wrapper">
+    <div class="row">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h2 class="panel-title">Instruction</h2>
+            </div>
+                <div class="panel-body">
+                        <ul>
+                            <li>Take a photo.</li>
+                            <li>Move right your aparat about 6 cm.</li>
+                            <li>Take another photo.</li>
+                            <li>Upload here both photos.</li>
+                            <li>Put the 3D glasses and admire your work!</li>
+                        </ul>
+                </div>
+        </div>
+        
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h2 class="panel-title">Tips</h2>
+            </div>
+            <div class="panel-body">
+                Avoid shooting moving objects and strong reds and blues.
+            </div>
+        </div>
+                
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h2 class="panel-title">Upload photo</h2>
+            </div>
+            <div class="panel-body">
+                    @using (Html.BeginForm("Upload", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
+                    {
+                        <div class="col-md-6">
+                            <label for="LeftPhoto">Left photo</label>
+                            <input class="btn btn-default" id="LeftPhoto" name="LeftPhoto" type="file" />
+                        </div>
+
+                        <div class="col-md-6">
+                            <label for="RightPhoto">Right photo</label>
+                            <input class="btn btn-default" id="RightPhoto" name="RightPhoto" type="file" />
+                        </div>
+                        <div class="col-md-10 center">
+                            <label for="SelectedAlgorithm">Choose algorithm:</label><br />
+                            <select class="" id="SelectedAlgorithm" name="SelectedAlgorithm">
+                                <option>True Anaglyph</option>
+                                <option>Gray Anaglyph</option>
+                                <option>Color Anaglyph</option>
+                                <option>Half-color Anaglyph</option>
+                                <option>Optimized Anaglyph</option>
+                            </select>
+                        </div>
+                        <div class="col-md-offset-0 center" id="uploadPhotoButton">
+                            <input class="btn btn-primary center" type="submit" value="Upload" />
+                        </div>
+                    }
+            </div>
+        </div>
+
+
+</div>
