@@ -14,6 +14,9 @@ I implemented several types of algorithms:
 - Half-color Anaglyph (modified Photoshop algorithm),
 - Optimized Anaglyph
 
+## Examples
+In folder **Content/uploads** I added example images for upload and anaglyph creation.
+
 ## Frameworks
 - ASP.NET MVC 5 (with Razor)
 - Bootstrap 3
