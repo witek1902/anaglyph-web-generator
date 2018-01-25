@@ -4,7 +4,7 @@
 
 ## About
 This project was created in 2016 as student project. \
-In January 2018 I decided to little refactoring and publishing it for open source. \
+In January 2018 I decided to little refactoring and publishing it for open source.
 
 I implemented several types of algorithms:
 - True Anaglyph,
